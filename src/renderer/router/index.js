@@ -1,11 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import TopBar from '../components/atoms/TopBar.vue'
+import Base from '../components/Base.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'TopBar',
-    component: TopBar
+    name: 'Base',
+    component: Base
   },
 ]
 

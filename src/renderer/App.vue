@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link to="/">ViewTopBar</router-link>
+    <router-link to="/">Color was set tailwind css:</router-link>
   </div>
 
   <router-view></router-view>

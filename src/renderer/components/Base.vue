@@ -1,6 +1,6 @@
 <template>
   <div class="text-green-500">
-    This is the top bar
+    This is the base content.
   </div>
 
   <div class="text-blue-500">
