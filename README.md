@@ -1,7 +1,7 @@
 # About this repo
 
 ![demo](.github/Screenshot.png)
-Thanks greatly to the original author which make this repo possible!!! All credits to him! 
+Thanks greatly to the original author which make this repo possible!!!
 
 Check his repo [here](https://github.com/appinteractive/electron-vite-tailwind-starter).
 
