@@ -1,21 +1,28 @@
-# Electron 12 + Vite 2 + Tailwind 2 - Starter
+# About this repo
 
-![Electron + Vite + Tailwind Starter](screenshot.png)
+![demo](.github/Screenshot.png)
+Thanks greatly to the original author which make this repo possible!!! Check his repo [here](https://github.com/appinteractive/electron-vite-tailwind-starter).
 
-This Starter utilizes [Electron](https://electronjs.org/), [Vite](https://github.com/vitejs/vite) and [Tailwind](https://tailwindcss.com/) in combination. It tries to adhere the best practices mentioned in the [Talk by Kilian Valkhof](https://www.youtube.com/watch?v=fw4PmPaghyU)
+Basically, I just do those things to make [it](https://github.com/appinteractive/electron-vite-tailwind-starter) fit my appitete:
 
-Also does it use [Tailwinds JIT Mode](https://tailwindcss.com/docs/just-in-time-mode).
+- Run *yarn upgrade* to safely update packages.
+- **Remove** typescript configuration as I want the minimal.
+- Add **vue-router** and used it.
+- Add **vuex** and tested it.
+- Make **tailwind css** work again after I make change above.
+- Minor adjustments for some assets file.
 
-## Installation
+After everything works I push it on github so I can use this as my starter for my personel projects afterwards.
 
-`yarn`
+## Running
 
-## Development
+Please check the original repo [here](https://github.com/appinteractive/electron-vite-tailwind-starter). Running process is the same.
 
-`yarn dev`
+Run `yarn dev` for electron app.
 
-> Be careful, do not run `yarn dev:electron` or `yarn dev:vite` solo as they need each other! (see [#83](https://github.com/appinteractive/electron-vite-tailwind-starter/issues/91#issuecomment-896743263))
+## Problems I encounter
 
-## Build
+- Can't upgrade electron version using *yarn add electron@lastest*. Haven't tried npm yet.
+- There is always a glitch before *electron* loads *vite-vue content*. I don't like but I haven't solved it yet.
 
-`yarn build`
+**Hope this helps**.
