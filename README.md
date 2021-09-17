@@ -25,5 +25,6 @@ Run `yarn dev` for electron app.
 ## Problems I encounter
 
 - Can't upgrade electron version using *yarn add electron@lastest*. Haven't tried npm yet.
+- Do not have preload.js to follow security conventions.
 
 **Hope this helps**.
