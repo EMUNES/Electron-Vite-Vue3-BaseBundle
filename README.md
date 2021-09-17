@@ -25,6 +25,5 @@ Run `yarn dev` for electron app.
 ## Problems I encounter
 
 - Can't upgrade electron version using *yarn add electron@lastest*. Haven't tried npm yet.
-- There is always a glitch before *electron* loads *vite-vue content*. I don't like but I haven't solved it yet.
 
 **Hope this helps**.
