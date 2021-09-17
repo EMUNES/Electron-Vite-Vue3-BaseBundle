@@ -8,7 +8,7 @@ module.exports = function createWindow(windowName = 'main', options = {}) {
     minWidth: 800,
     minHeight: 600,
     titleBarStyle: 'hidden',
-    autoHideMenuBar: true,
+    autoHideMenuBar: isProd, // Hide in production.
     trafficLightPosition: {
       x: 20,
       y: 32,
@@ -16,7 +16,7 @@ module.exports = function createWindow(windowName = 'main', options = {}) {
     ...options,
     webPreferences: {
       contextIsolation: true,
-      devTools: !isProd,
+      devTools: !isProd, // devTools for development.
       spellcheck: false,
       nodeIntegration: true,
       ...(options.webPreferences || {}),

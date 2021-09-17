@@ -1,5 +1,5 @@
 const createWindow = require('./helpers/create-window.js')
-const { app } = require('electron')
+const { app, BrowserWindow } = require('electron')
 const contextMenu = require('electron-context-menu')
 
 const resolveConfig = require('tailwindcss/resolveConfig')
@@ -53,6 +53,9 @@ function createMainWindow() {
   const port = process.env.PORT || 3333
   if (isDev) {
     loadVitePage(port)
+    mainWindow.webContents.openDevTools({
+      mode: 'bottom'
+    })
   } else {
     mainWindow.loadFile('dist/index.html')
   }
@@ -66,12 +69,16 @@ function createMainWindow() {
   })
 }
 
-app.once('ready', createMainWindow)
-app.on('activate', () => {
-  if (!mainWindow) {
-    createMainWindow()
-  }
+app.whenReady().then(() => {
+  createMainWindow()
+
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createMainWindow()
+    }
+  })
 })
+
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit()
