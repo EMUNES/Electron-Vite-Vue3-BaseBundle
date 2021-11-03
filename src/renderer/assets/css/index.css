@@ -8,3 +8,13 @@ body {
   /* used for behaving more like an app, selection inside inputs and textareas still work in chromium */
   user-select: none;
 }
+
+@layer base {
+  button {
+    @apply outline-none;
+  }
+
+  buttom:focus {
+    @apply outline-none;
+  }
+}
